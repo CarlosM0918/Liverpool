@@ -12,9 +12,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SearchPage extends MainPage{
-
-
-
 //    @FindBy(xpath = "(//*[contains(text(), 'Cerveza Minerva Stout 355 ml')])[3]")
 //    private WebElement titleCerveza;
 
@@ -28,10 +25,10 @@ public class SearchPage extends MainPage{
     private WebElement btnMayorPrecio;
 
     @FindBy(className = "card-masonry")
-    private List<WebElement> productList;
+    private List<WebElement> productListWine;
 
     @FindBy(className = "card-title")
-    private List<WebElement> cervesaList;
+    private List<WebElement> productListSearched;
 
     @FindBy(className = "slick-track")
     private WebElement relatedItems;
@@ -45,13 +42,13 @@ public class SearchPage extends MainPage{
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         try{
             new WebDriverWait(driver, Duration.ofSeconds(15))
-                    .until(ExpectedConditions.visibilityOfAllElements(cervesaList));
+                    .until(ExpectedConditions.visibilityOfAllElements(productListSearched));
         }catch (TimeoutException te) {
-            preLoading(cervesaList.get(0));
+            preLoading(productListSearched.get(0));
             new WebDriverWait(driver, Duration.ofSeconds(15))
-                    .until(ExpectedConditions.visibilityOfAllElements(cervesaList));
+                    .until(ExpectedConditions.visibilityOfAllElements(productListSearched));
         }
-        for (WebElement cerveza:cervesaList) {
+        for (WebElement cerveza:productListSearched) {
             if(cerveza.getText().contains(item)){
                 cerveza.click();
                 break;
@@ -115,18 +112,63 @@ public class SearchPage extends MainPage{
     public SearchPage selectItemWithHighestPrice(){
         try {
             new WebDriverWait(driver, Duration.ofSeconds(8))
-                    .until(ExpectedConditions.visibilityOfAllElements(productList));
+                    .until(ExpectedConditions.visibilityOfAllElements(productListWine));
         }catch (TimeoutException te){
-            preLoading(productList.get(0));
+            preLoading(productListWine.get(0));
 
             new WebDriverWait(driver, Duration.ofSeconds(8))
-                    .until(ExpectedConditions.visibilityOfAllElements(productList));
+                    .until(ExpectedConditions.visibilityOfAllElements(productListWine));
         }
-        WebElement firstProduct = productList.get(0);
+        WebElement firstProduct = productListWine.get(0);
         firstProduct.click();
         return this;
     }
 
+	/////////////////////////////////////////////////// Jamon ///////////////////////////////////////////////////
+
+	public SearchPage selectHam(String item){
+		try{
+			new WebDriverWait(driver, Duration.ofSeconds(8))
+				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
+		}catch (TimeoutException te){
+			preLoading(productListSearched.get(0));
+
+			new WebDriverWait(driver, Duration.ofSeconds(8))
+				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
+		}
+
+		for (WebElement cerveza:productListSearched) {
+			if(cerveza.getText().contains(item)){
+				cerveza.click();
+				break;
+			}
+		}
+
+		return this;
+	}
+
+	/////////////////////////////////////////////////// cuchillo ///////////////////////////////////////////////////
+
+	public SearchPage selectKnife(String item){
+		try{
+			new WebDriverWait(driver, Duration.ofSeconds(8))
+				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
+		}catch (TimeoutException te){
+			preLoading(productListSearched.get(0));
+
+			new WebDriverWait(driver, Duration.ofSeconds(8))
+				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
+		}
+
+		for (WebElement cerveza:productListSearched) {
+			if(cerveza.getText().contains(item)){
+				cerveza.click();
+				break;
+			}
+		}
+
+		return this;
+	}
 
 
 }

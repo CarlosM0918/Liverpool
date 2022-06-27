@@ -62,6 +62,12 @@ public class MainPage {
         return this;
     }
 
+	public MainPage goBack() throws InterruptedException {
+//		driver.navigate().wait(3000);
+		driver.navigate().back();
+		return this;
+	}
+
     public MainPage scrollWindow(String scroll){
         js = (JavascriptExecutor)driver;
         try {

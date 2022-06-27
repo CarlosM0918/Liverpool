@@ -30,12 +30,34 @@ public class TestClass extends BaseTest {
 
         search.addToCart().andVerifyItemAddedAlert();
 
-        search.goToBag().buyItems();
-
-        loginPage.loginAs(credentials.get("email"))
-                .withPassword(credentials.get("password"))
-                .login();
 //        Thread.sleep(5000);
     }
 
+	@Test(priority = 3)
+	void selectHam() throws InterruptedException {
+		search.searchItem(productToSearch.get("product3"))
+			.search();
+
+		search.selectHam(productToSearch.get("selectedHam"));
+		search.addToCart().andVerifyItemAddedAlert();
+	}
+	@Test(priority = 4)
+	void selectKnife() throws InterruptedException {
+		search.goBack();
+
+		search.selectKnife(productToSearch.get("selectedKnife"));
+		search.addToCart().andVerifyItemAddedAlert();
+	}
+
+	@Test(priority = 7)
+	void goBag() {
+		search.goToBag().buyItems();
+	}
+
+	@Test(priority = 8)
+	void checkLogin(){
+		loginPage.loginAs(credentials.get("email"))
+			.withPassword(credentials.get("password"))
+			.login();
+	}
 }

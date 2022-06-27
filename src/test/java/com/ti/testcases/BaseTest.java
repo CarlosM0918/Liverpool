@@ -26,8 +26,11 @@ public class BaseTest {
         DriverFactory.getInstance().getDriver().navigate().to(baseURL);
 
         productToSearch.put("product1", "cerveza");
-        productToSearch.put("product2", "vino");
-        productToSearch.put("selectedBeer", "Blue Moon");
+		productToSearch.put("product2", "vino");
+		productToSearch.put("product3", "jamon");
+		productToSearch.put("selectedBeer", "Blue Moon");
+		productToSearch.put("selectedHam", "Mini Jamón Serrano Cumbres");
+		productToSearch.put("selectedKnife", "Cuchillo para Jamón Wüsthof");
 
         credentials.put("email", "test@email.com");
         credentials.put("password", "test123");
