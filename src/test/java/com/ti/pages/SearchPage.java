@@ -137,9 +137,9 @@ public class SearchPage extends MainPage{
 				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
 		}
 
-		for (WebElement cerveza:productListSearched) {
-			if(cerveza.getText().contains(item)){
-				cerveza.click();
+		for (WebElement jamon:productListSearched) {
+			if(jamon.getText().contains(item)){
+				jamon.click();
 				break;
 			}
 		}

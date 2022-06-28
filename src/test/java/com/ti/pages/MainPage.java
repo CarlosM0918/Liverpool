@@ -61,6 +61,7 @@ public class MainPage {
                     .until(ExpectedConditions.visibilityOf(opt));
         }catch (TimeoutException te){
             driver.navigate().refresh();
+//			preLoading(opt);
         }
         return this;
     }
