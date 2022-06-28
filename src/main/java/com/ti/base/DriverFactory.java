@@ -40,7 +40,7 @@ public class DriverFactory {
             WebDriverManager.getInstance(DriverManagerType.valueOf(browserType.toString())).setup();
             switch (browserType){
                 case CHROME:
-					System.setProperty("webdriver.chrome.driver", driverPath+driverName);
+//					System.setProperty("webdriver.chrome.driver", driverPath+driverName);
                     driver.set(new ChromeDriver());
                     break;
                 case EDGE:
