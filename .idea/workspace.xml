@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95f7308b-f4d3-411d-b060-e07bdd7851ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,7 @@
       <recent name="C:\Users\Azul\Documents\FlujoLiverpool\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Azul\Desktop\material\SeAvanzado\Liverpool\src\main\resources" />
       <recent name="C:\Users\Azul\Desktop\material\FlujoLiverpool\FlujoLiverpool" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">

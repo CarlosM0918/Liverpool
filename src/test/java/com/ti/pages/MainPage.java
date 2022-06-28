@@ -2,6 +2,7 @@ package com.ti.pages;
 
 import com.ti.base.DriverFactory;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -49,7 +50,9 @@ public class MainPage {
     private WebElement lknState;
 
     public MainPage(){
-        PageFactory.initElements(driver, this);
+//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/chromedriver.exe");
+//		driver = new ChromeDriver();
+		PageFactory.initElements(driver, this);
     }
 
     public MainPage preLoading(WebElement opt){
