@@ -2,4 +2,4 @@
 
 target/
 .idea/
-jenkins_home_on_host/
+jenkins_home_host/
