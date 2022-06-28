@@ -15,7 +15,7 @@ public class TestClass extends BaseTest {
         search.addToCart().andVerifyItemAddedAlert();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, enabled = true)
     void selectWine() throws InterruptedException {
         search.searchItem(productToSearch.get("product2"))
                 .search();
@@ -39,15 +39,16 @@ public class TestClass extends BaseTest {
 			.search();
 
 		search.selectHam(productToSearch.get("selectedHam"));
-		search.addToCart().andVerifyItemAddedAlert();
+		 search.addToCart().andVerifyItemAddedAlert();
 	}
-	@Test(priority = 4)
-	void selectKnife() throws InterruptedException {
-		search.goBack();
 
-		search.selectKnife(productToSearch.get("selectedKnife"));
-		search.addToCart().andVerifyItemAddedAlert();
-	}
+	 @Test(priority = 4)
+	 void selectKnife() throws InterruptedException {
+	 	search.goBack();
+
+	 	search.selectKnife(productToSearch.get("selectedKnife"));
+	 	search.addToCart().andVerifyItemAddedAlert();
+	 }
 
 	@Test(priority = 7)
 	void goBag() {

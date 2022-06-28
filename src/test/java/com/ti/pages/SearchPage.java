@@ -12,9 +12,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SearchPage extends MainPage{
-//    @FindBy(xpath = "(//*[contains(text(), 'Cerveza Minerva Stout 355 ml')])[3]")
-//    private WebElement titleCerveza;
-
     @FindBy(linkText = "Generoso")
     private WebElement lnkGeneroso;
 
@@ -126,7 +123,8 @@ public class SearchPage extends MainPage{
 
 	/////////////////////////////////////////////////// Jamon ///////////////////////////////////////////////////
 
-	public SearchPage selectHam(String item){
+	public SearchPage selectHam(String item) throws InterruptedException {
+//		driver.navigate().wait(3000);
 		try{
 			new WebDriverWait(driver, Duration.ofSeconds(8))
 				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
@@ -138,12 +136,14 @@ public class SearchPage extends MainPage{
 		}
 
 		for (WebElement jamon:productListSearched) {
+            System.out.println(jamon.getText());
 			if(jamon.getText().contains(item)){
+                System.out.println("entre al if");
 				jamon.click();
 				break;
 			}
 		}
-
+		Thread.sleep(2000);
 		return this;
 	}
 
@@ -160,9 +160,9 @@ public class SearchPage extends MainPage{
 				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
 		}
 
-		for (WebElement cerveza:productListSearched) {
-			if(cerveza.getText().contains(item)){
-				cerveza.click();
+		for (WebElement products:productListSearched) {
+			if(products.getText().contains(item)){
+				products.click();
 				break;
 			}
 		}
