@@ -1,0 +1,1 @@
+java -cp "C:\Users\Azul\Desktop\material\SeAvanzado\Liverpool\lib\testng.jar"; "C:\Users\Azul\Desktop\material\SeAvanzado\Liverpool\testng.xml"

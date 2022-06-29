@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Implementation-Title: TestNG
+Bundle-Description: Testing framework for Java
+Automatic-Module-Name: org.testng
+Bundle-License: https://apache.org/licenses/LICENSE-2.0
+Bundle-SymbolicName: org.testng
+Implementation-Version: 7.4.0
+Specification-Vendor: TestNG
+Specification-Title: TestNG
+Implementation-Vendor-Id: org.testng
+Bundle-Vendor: TestNG
+Import-Package: 
+                "bsh.*;version="[2.0.0,3.0.0)";resolu
+ tion:=optional",
+                "com.beust.jcommander.*;version="[1.
+ 7.0,3.0.0)";resolution:=optional",
+                "com.google.inject
+ .*;version="[1.2,1.3)";resolution:=optional",
+                "junit.
+ framework;version="[3.8.1, 5.0.0)";resolution:=optional",
+           
+      "org.junit.*;resolution:=optional",
+                "org.apache.
+ tools.ant.*;version="[1.7.0, 2.0.0)";resolution:=optional",
+         
+        "org.yaml.*;version="[1.6,2.0)";resolution:=optional",
+       
+          "!com.beust.testng",
+                "!org.testng.*",
+      
+           "!com.sun.*",
+                "*"
+            
+Implementation-Vendor: TestNG
+Bundle-Name: TestNG
+Bundle-Version: 7.4.0
+Specification-Version: 7.4.0
+Implementation-Url: https://testng.org
+

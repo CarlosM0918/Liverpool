@@ -3,3 +3,4 @@
 target/
 .idea/
 jenkins_home_host/
+!.lib/*

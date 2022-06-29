@@ -136,9 +136,9 @@ public class SearchPage extends MainPage{
 		}
 
 		for (WebElement jamon:productListSearched) {
-            System.out.println(jamon.getText());
+//            System.out.println(jamon.getText());
 			if(jamon.getText().contains(item)){
-                System.out.println("entre al if");
+//                System.out.println("entre al if");
 				jamon.click();
 				break;
 			}
@@ -150,6 +150,8 @@ public class SearchPage extends MainPage{
 	/////////////////////////////////////////////////// cuchillo ///////////////////////////////////////////////////
 
 	public SearchPage selectKnife(String item){
+		scrollWindow("down");
+		scrollWindow("down");
 		try{
 			new WebDriverWait(driver, Duration.ofSeconds(8))
 				.until(ExpectedConditions.visibilityOfAllElements(productListSearched));
