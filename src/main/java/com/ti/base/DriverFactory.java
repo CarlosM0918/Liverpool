@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.config.DriverManagerType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.ChromiumOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -41,7 +42,11 @@ public class DriverFactory {
             switch (browserType){
                 case CHROME:
 //					System.setProperty("webdriver.chrome.driver", driverPath+driverName);
-                    driver.set(new ChromeDriver());
+					ChromiumOptions options = new ChromeOptions();
+					options.addArguments("--headless");
+					options.addArguments("--no-sandbox");
+//					options.addArguments("--disable-dev-shm-usage");
+                    driver.set(new ChromeDriver(options = options));
                     break;
                 case EDGE:
                     driver.set(new EdgeDriver());
