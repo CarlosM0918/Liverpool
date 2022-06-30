@@ -150,6 +150,7 @@ public class SearchPage extends MainPage{
 	/////////////////////////////////////////////////// cuchillo ///////////////////////////////////////////////////
 
 	public SearchPage selectKnife(String item){
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		scrollWindow("down");
 		scrollWindow("down");
 		try{

@@ -7,3 +7,5 @@ jenkins:
   # using a bind mount to the host `./jenkins_home` means I can easily peruse the jenkins_home files without needing to "get into the container"
   restart: unless-stopped
   # a named volume is fine too - jenkins_home:/var/jenkins_home
+
+# https://www.youtube.com/watch?v=UfwQkuDa6Gc for more information

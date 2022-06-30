@@ -16,6 +16,16 @@ pipeline {
                 git url: 'https://github.com/CarlosM0918/Liverpool.git', branch: 'master'
             }            
         }
+        stage('Compile and validate'){
+            steps{
+                sh 'mvn clean compile validate'
+            }
+        }
+        stage('package'){
+          steps{
+              sh 'mvn clean install package'
+          }
+        }
         stage('Build') {
             steps {
                 // bat 'mvn clean test'
