@@ -13,7 +13,7 @@ pipeline {
         // }
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/CarlosM0918/Liverpool.git', branch: 'master'
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/CarlosM0918/Liverpool.git']]]) 
             }            
         }
         stage('Compile and validate'){
