@@ -5,27 +5,21 @@ pipeline {
         maven "mvn"
     }
     stages {
-        // stage('Verify_browser_version') {
-        //     steps{
-        //         sh 'google-chrome --version'
-        //         sh 'firefox --version'    
-        //     }
-        // }
         stage('Checkout') {
             steps {
                 git url: 'https://github.com/CarlosM0918/Liverpool.git', branch: 'master'
             }            
         }
-        stage('Compile and validate'){
-            steps{
-                sh 'mvn clean compile validate'
-            }
-        }
-        stage('package'){
-          steps{
-              sh 'mvn clean install package'
-          }
-        }
+//         stage('Compile and validate'){
+//             steps{
+//                 sh 'mvn clean compile validate'
+//             }
+//         }
+//         stage('package'){
+//           steps{
+//               sh 'mvn clean install package'
+//           }
+//         }
         stage('Build') {
             steps {
                 // bat 'mvn clean test'
