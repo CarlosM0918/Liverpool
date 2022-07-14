@@ -41,11 +41,6 @@ public class DriverFactory {
             WebDriverManager.getInstance(DriverManagerType.valueOf(browserType.toString())).setup();
             switch (browserType){
                 case CHROME:
-//					System.setProperty("webdriver.chrome.driver", driverPath+driverName);
-//					ChromiumOptions options = new ChromeOptions();
-//					options.addArguments("--headless");
-//					options.addArguments("--no-sandbox");
-//					options.addArguments("--disable-dev-shm-usage");
                     driver.set(new ChromeDriver(/*options = options*/));
                     break;
                 case EDGE:

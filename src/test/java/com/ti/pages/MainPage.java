@@ -50,8 +50,6 @@ public class MainPage {
     private WebElement lknState;
 
     public MainPage(){
-//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/chromedriver.exe");
-//		driver = new ChromeDriver();
 		PageFactory.initElements(driver, this);
     }
 
