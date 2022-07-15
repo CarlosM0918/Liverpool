@@ -1,0 +1,6 @@
+.github/*
+target
+.idea/
+jenkins_home_host
+lib/
+allure-results

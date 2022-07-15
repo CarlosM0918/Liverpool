@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,10 +21,17 @@ public class BaseTest {
     Login loginPage;
 
     @BeforeTest
-    @Parameters("browser")
-     void setup(String browser) {
-        DriverFactory.getInstance().setDriver(BrowserType.valueOf(browser.toUpperCase()));
-        DriverFactory.getInstance().getDriver().navigate().to(baseURL);
+    @Parameters({"browser", "remoteDriver"})
+     void setup(String browser, boolean remoteDriver) throws MalformedURLException {
+//		if(remoteDriver){
+//			System.out.println("iniciando driver remoto");
+//			DriverFactoryRemote.getInstance().setDriver(BrowserType.valueOf(browser.toUpperCase()));
+//			DriverFactoryRemote.getInstance().getDriver().navigate().to(baseURL);
+//		}else{
+			System.out.println("iniciando driver local");
+			DriverFactory.getInstance().setDriver(BrowserType.valueOf(browser.toUpperCase()), remoteDriver);
+			DriverFactory.getInstance().getDriver().navigate().to(baseURL);
+//		}
 
         productToSearch.put("product1", "cerveza");
 		productToSearch.put("product2", "vino");
@@ -39,7 +47,8 @@ public class BaseTest {
     }
 
     @AfterTest
-    void turnDown(){
-        DriverFactory.getInstance().removeDriver();
+	@Parameters("remoteDriver")
+    void turnDown(boolean remoteDriver){
+		DriverFactory.getInstance().removeDriver();
     }
 }

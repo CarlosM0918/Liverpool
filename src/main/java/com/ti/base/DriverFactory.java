@@ -7,9 +7,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chromium.ChromiumOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class DriverFactory {
     private String getOS = System.getProperty("os.name").toLowerCase();
@@ -30,7 +36,7 @@ public class DriverFactory {
         return driver.get();
     }
 
-    public void setDriver(BrowserType browserType){
+    public void setDriver(BrowserType browserType, boolean remoteDriver) throws MalformedURLException {
         System.out.println(getOS);
         if(getOS.contains("mac") && browserType.equals(BrowserType.SAFARI)){
             driver.set(new SafariDriver());
@@ -41,13 +47,28 @@ public class DriverFactory {
             WebDriverManager.getInstance(DriverManagerType.valueOf(browserType.toString())).setup();
             switch (browserType){
                 case CHROME:
-                    driver.set(new ChromeDriver(/*options = options*/));
+					if(remoteDriver){
+						ChromeOptions chromeOptions = new ChromeOptions();
+						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions));
+					}else {
+						driver.set(new ChromeDriver());
+					}
                     break;
                 case EDGE:
-                    driver.set(new EdgeDriver());
+					if(remoteDriver){
+						EdgeOptions edgeOptions = new EdgeOptions();
+						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), edgeOptions));
+					}else {
+						driver.set(new ChromeDriver());
+					}
                     break;
                 case FIREFOX:
-                    driver.set(new FirefoxDriver());
+					if(remoteDriver){
+						FirefoxOptions firefoxOptions = new FirefoxOptions();
+						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), firefoxOptions));
+					}else {
+						driver.set(new ChromeDriver());
+					}
                     break;
                 case IEXPLORER:
                     if(getOS.contains("win")){
