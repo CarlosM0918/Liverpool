@@ -1,4 +1,9 @@
 # Untracked files and folder:
 
 target/
-.idea
+.idea/
+.idea/
+jenkins_home_host/
+lib/
+allure-results
+Dockerdata/
