@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95f7308b-f4d3-411d-b060-e07bdd7851ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p3.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/p3.Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +59,7 @@
       <recent name="com.ti.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml">
     <configuration name="C:/Users/Azul/Desktop/material/FlujoLiverpool/FlujoLiverpool/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FlujoLiverpool" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -106,8 +112,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml" />
+        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/testng.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/FlujoLiverpool/FlujoLiverpool/testng.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Documents/FlujoLiverpool/src/test/java/com/ti/testcases/testng.xml" />

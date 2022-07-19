@@ -136,7 +136,12 @@ public class MainPage {
     public MainPage availavityInStore(){
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
-        new WebDriverWait(driver, Duration.ofSeconds(8)).until(ExpectedConditions.elementToBeClickable(btnGeoStore));
+		try {
+			new WebDriverWait(driver, Duration.ofSeconds(8)).until(ExpectedConditions.elementToBeClickable(btnGeoStore));
+		}catch (TimeoutException te){
+			preLoading(btnGeoStore);
+			new WebDriverWait(driver, Duration.ofSeconds(8)).until(ExpectedConditions.elementToBeClickable(btnGeoStore));
+		}
         btnGeoStore.click();
         return this;
     }

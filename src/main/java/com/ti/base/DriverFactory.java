@@ -55,11 +55,11 @@ public class DriverFactory {
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions));
 					}else {
 						ChromeOptions chromeOptions = new ChromeOptions();
-						chromeOptions.addArguments("--headless");
+//						chromeOptions.addArguments("--headless");
 //						chromeOptions.addArguments("--disable-gpu");
 //                        chromeOptions.addArguments("--no-sandbox");
 //						chromeOptions.setBinary(path);
-						driver.set(new ChromeDriver(chromeOptions));
+						driver.set(new ChromeDriver(/*chromeOptions*/));
 					}
                     break;
                 case EDGE:
@@ -67,9 +67,9 @@ public class DriverFactory {
 					if(remoteDriver){
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), edgeOptions));
 					}else {
-						edgeOptions.addArguments("--headless");
-						edgeOptions.addArguments("--no-sandbox");
-						driver.set(new EdgeDriver(edgeOptions));
+//						edgeOptions.addArguments("--headless");
+//						edgeOptions.addArguments("--no-sandbox");
+						driver.set(new EdgeDriver(/*edgeOptions*/));
 					}
                     break;
                 case FIREFOX:
@@ -77,9 +77,9 @@ public class DriverFactory {
 					if(remoteDriver){
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), firefoxOptions));
 					}else {
-						firefoxOptions.addArguments("--headless");
-						firefoxOptions.addArguments("--no-sandbox");
-						driver.set(new FirefoxDriver(firefoxOptions));
+//						firefoxOptions.addArguments("--headless");
+//						firefoxOptions.addArguments("--no-sandbox");
+						driver.set(new FirefoxDriver(/*firefoxOptions*/));
 					}
                     break;
                 case IEXPLORER:

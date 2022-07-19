@@ -29,6 +29,7 @@ public class BaseTest {
         productToSearch.put("product1", "cerveza");
 		productToSearch.put("product2", "vino");
 		productToSearch.put("product3", "jamon");
+		productToSearch.put("product4", "cuchillo para jamon");
 		productToSearch.put("selectedBeer", "Blue Moon");
 		productToSearch.put("selectedHam", "Serrano Cumbres");
 		productToSearch.put("selectedKnife", "Cuchillo para Jamón Wüsthof");

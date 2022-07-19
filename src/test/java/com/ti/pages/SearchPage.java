@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SearchPage extends MainPage{
-    @FindBy(linkText = "Generoso")
+    @FindBy(css = "div[class='min-vh-100'] li:nth-child(7) a:nth-child(1)")
     private WebElement lnkGeneroso;
 
     @FindBy(linkText = "Ordenar por:")
@@ -107,6 +107,7 @@ public class SearchPage extends MainPage{
     }
 
     public SearchPage selectItemWithHighestPrice(){
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         try {
             new WebDriverWait(driver, Duration.ofSeconds(8))
                     .until(ExpectedConditions.visibilityOfAllElements(productListWine));

@@ -33,7 +33,7 @@ public class TestClass extends BaseTest {
 //        Thread.sleep(5000);
     }
 
-	@Test(priority = 3)
+	@Test(priority = 3, enabled = true)
 	void selectHam() throws InterruptedException {
 		search.searchItem(productToSearch.get("product3"))
 			.search();
@@ -42,20 +42,21 @@ public class TestClass extends BaseTest {
 		search.addToCart().andVerifyItemAddedAlert();
 	}
 
-	 @Test(priority = 4)
+	 @Test(priority = 4, enabled = true)
 	 void selectKnife() throws InterruptedException {
-	 	search.goBack();
+	 	search.searchItem(productToSearch.get("product4"))
+			 .search();
 
 	 	search.selectKnife(productToSearch.get("selectedKnife"));
 	 	search.addToCart().andVerifyItemAddedAlert();
 	 }
 
-	@Test(priority = 7)
+	@Test(priority = 7, enabled = true)
 	void goBag() {
 		search.goToBag().buyItems();
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 8, enabled = true)
 	void checkLogin(){
 		loginPage.loginAs(credentials.get("email"))
 			.withPassword(credentials.get("password"))
