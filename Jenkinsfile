@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools{
         maven "mvn"
+        dockerTool 'docker'
     }
     stages {
         // stage('Compile and validate'){
