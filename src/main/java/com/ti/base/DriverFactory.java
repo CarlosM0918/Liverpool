@@ -50,7 +50,7 @@ public class DriverFactory {
                 case CHROME:
 					if(remoteDriver){
 						ChromeOptions chromeOptions = new ChromeOptions();
-						chromeOptions.addArguments("--headless");
+//						chromeOptions.addArguments("--headless");
 //                        chromeOptions.addArguments("--no-sandbox");
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions));
 					}else {
