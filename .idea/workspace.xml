@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="95f7308b-f4d3-411d-b060-e07bdd7851ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LocalSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/p2.Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +38,6 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <!-- gilsanchezts@outlook.com gilberto28 -->
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -54,10 +61,30 @@
       <recent name="com.ti.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/testng.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml">
     <configuration name="C:/Users/Azul/Desktop/material/FlujoLiverpool/FlujoLiverpool/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FlujoLiverpool" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Liverpool" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/LocalSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Liverpool" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/RemoteSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -85,32 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass.searchCerveza" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FlujoLiverpool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ti.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/ti/testcases/testng.xml" />
-      <option name="PACKAGE_NAME" value="com.ti.testcases" />
-      <option name="MAIN_CLASS_NAME" value="com.ti.testcases.TestClass" />
-      <option name="METHOD_NAME" value="searchCerveza" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="0" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml" />
+        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/testng.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/FlujoLiverpool/FlujoLiverpool/testng.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Documents/FlujoLiverpool/src/test/java/com/ti/testcases/testng.xml" />
-        <item itemvalue="TestNG.TestClass.searchCerveza" />
       </list>
     </recent_temporary>
   </component>

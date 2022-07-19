@@ -4,3 +4,4 @@ target
 jenkins_home_host
 lib/
 allure-results
+Dockerdata/

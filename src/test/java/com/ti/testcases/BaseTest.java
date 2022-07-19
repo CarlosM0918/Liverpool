@@ -23,15 +23,8 @@ public class BaseTest {
     @BeforeTest
     @Parameters({"browser", "remoteDriver"})
      void setup(String browser, boolean remoteDriver) throws MalformedURLException {
-//		if(remoteDriver){
-//			System.out.println("iniciando driver remoto");
-//			DriverFactoryRemote.getInstance().setDriver(BrowserType.valueOf(browser.toUpperCase()));
-//			DriverFactoryRemote.getInstance().getDriver().navigate().to(baseURL);
-//		}else{
-			System.out.println("iniciando driver local");
 			DriverFactory.getInstance().setDriver(BrowserType.valueOf(browser.toUpperCase()), remoteDriver);
 			DriverFactory.getInstance().getDriver().navigate().to(baseURL);
-//		}
 
         productToSearch.put("product1", "cerveza");
 		productToSearch.put("product2", "vino");

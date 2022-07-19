@@ -39,7 +39,7 @@ public class TestClass extends BaseTest {
 			.search();
 
 		search.selectHam(productToSearch.get("selectedHam"));
-		 search.addToCart().andVerifyItemAddedAlert();
+		search.addToCart().andVerifyItemAddedAlert();
 	}
 
 	 @Test(priority = 4)

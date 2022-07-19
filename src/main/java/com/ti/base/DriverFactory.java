@@ -23,6 +23,7 @@ public class DriverFactory {
     private String driverPath = System.getProperty("user.dir") + "/src/main/resources/";
     private String driverName = (getOS.contains("mac"))?"chromedriver" : "chromedriver.exe";
     private String braveLocation = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
+	private String path = (getOS.contains("win"))?driverPath:"/usr/local/bin/chromedriver";
 
     private static DriverFactory instance = new DriverFactory();
 
@@ -37,7 +38,7 @@ public class DriverFactory {
     }
 
     public void setDriver(BrowserType browserType, boolean remoteDriver) throws MalformedURLException {
-        System.out.println(getOS);
+        // System.out.println(getOS);
         if(getOS.contains("mac") && browserType.equals(BrowserType.SAFARI)){
             driver.set(new SafariDriver());
         }else if(browserType.equals(BrowserType.BRAVE)){
@@ -49,25 +50,36 @@ public class DriverFactory {
                 case CHROME:
 					if(remoteDriver){
 						ChromeOptions chromeOptions = new ChromeOptions();
+						chromeOptions.addArguments("--headless");
+//                        chromeOptions.addArguments("--no-sandbox");
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions));
 					}else {
-						driver.set(new ChromeDriver());
+						ChromeOptions chromeOptions = new ChromeOptions();
+						chromeOptions.addArguments("--headless");
+//						chromeOptions.addArguments("--disable-gpu");
+//                        chromeOptions.addArguments("--no-sandbox");
+//						chromeOptions.setBinary(path);
+						driver.set(new ChromeDriver(chromeOptions));
 					}
                     break;
                 case EDGE:
+					EdgeOptions edgeOptions = new EdgeOptions();
 					if(remoteDriver){
-						EdgeOptions edgeOptions = new EdgeOptions();
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), edgeOptions));
 					}else {
-						driver.set(new ChromeDriver());
+						edgeOptions.addArguments("--headless");
+						edgeOptions.addArguments("--no-sandbox");
+						driver.set(new EdgeDriver(edgeOptions));
 					}
                     break;
                 case FIREFOX:
+					FirefoxOptions firefoxOptions = new FirefoxOptions();
 					if(remoteDriver){
-						FirefoxOptions firefoxOptions = new FirefoxOptions();
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), firefoxOptions));
 					}else {
-						driver.set(new ChromeDriver());
+						firefoxOptions.addArguments("--headless");
+						firefoxOptions.addArguments("--no-sandbox");
+						driver.set(new FirefoxDriver(firefoxOptions));
 					}
                     break;
                 case IEXPLORER:

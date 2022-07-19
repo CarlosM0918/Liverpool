@@ -9,13 +9,13 @@
             <class name="com.ti.testcases.TestClass"/>
         </classes>
     </test>
-    <test name="EdgeTest">
-        <parameter name="browser" value="Edge"/>
-		<parameter name="remoteDriver" value="true"></parameter>
-        <classes>
-            <class name="com.ti.testcases.TestClass"/>
-        </classes>
-    </test>
+<!--    <test name="EdgeTest">-->
+<!--        <parameter name="browser" value="Edge"/>-->
+<!--		<parameter name="remoteDriver" value="true"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="com.ti.testcases.TestClass"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--	<test name="FirefoxTest">-->
 <!--		<parameter name="browser" value="Firefox"/>-->
 <!--		<parameter name="remoteDriver" value="true"></parameter>-->

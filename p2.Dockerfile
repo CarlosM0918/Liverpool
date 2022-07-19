@@ -1,10 +1,21 @@
-FROM selenium/standalone-chrome:latest
+FROM selenium/hub:latest
 
 User root
 
-RUN apt-get update && apt-get -y install maven
+WORKDIR /srv
 
-COPY [".", "/usr/src/Liverpool"]
+ADD . /srv
+RUN apt-get -y update
+RUN apt-get install wget -y
+RUN apt-get install zip -y
+RUN apt-get install unzip -y
+RUN apt-get install maven -y
+
+CMD ["mvn", "test", "-DtestngFile=LocalSuite.xml"]
+
+# RUN apt-get update && apt-get -y install maven
+
+# COPY [".", "/usr/src/Liverpool"]
 
 # USER root
 
@@ -24,4 +35,4 @@ COPY [".", "/usr/src/Liverpool"]
 #
 #RUN chmod +x -R $(pwd) && ./mvnw clean test
 
-# RUN ["mvn", "clean", "-DtestngFile='LocalSuite.xml'"]
+# RUN ["mvn", "clean", "-DtestngFile='RemoteSuite.xml'"]
