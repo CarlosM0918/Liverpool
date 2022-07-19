@@ -19,9 +19,9 @@ pipeline {
             steps {
                 bat 'docker --version'
 
-                // bat 'docker build -f p3.Dockerfile -t liverpool .'
+                bat 'docker build -f p3.Dockerfile -t liverpool .'
 
-                // bat 'docker run --name lpool liverpool'
+                bat 'docker run --name lpool liverpool'
             }
         }
     }
