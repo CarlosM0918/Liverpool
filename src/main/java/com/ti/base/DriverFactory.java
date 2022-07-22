@@ -54,10 +54,12 @@ public class DriverFactory {
 //                        chromeOptions.addArguments("--no-sandbox");
 						driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions));
 					}else {
+						System.out.println("here i am");
 						ChromeOptions chromeOptions = new ChromeOptions();
-//						chromeOptions.addArguments("--headless");
+						chromeOptions.addArguments("--headless");
 //						chromeOptions.addArguments("--disable-gpu");
-//                        chromeOptions.addArguments("--no-sandbox");
+						chromeOptions.addArguments("--user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.188 Safari/537.36 CrKey/1.54.250320");
+						chromeOptions.addArguments("--no-sandbox");
 //						chromeOptions.setBinary(path);
 						driver.set(new ChromeDriver(/*chromeOptions*/));
 					}

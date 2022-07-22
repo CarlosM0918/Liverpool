@@ -122,6 +122,7 @@ public class MainPage {
 
     public MainPage searchItem(String obj){
         System.out.println("Objeto recibido: "+obj);
+		Assert.assertTrue(txtSearchBar.isEnabled(), "no esta disponible");
         txtSearchBar.clear();
         txtSearchBar.sendKeys(obj);
         return this;
