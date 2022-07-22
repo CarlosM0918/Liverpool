@@ -78,7 +78,7 @@
     </build>
     <profiles>
       <profile>
-        <id>lambda</id>
+        <id>Lambda</id>
           <build>
             <plugins>
               <plugin>

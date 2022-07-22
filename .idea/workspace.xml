@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95f7308b-f4d3-411d-b060-e07bdd7851ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conf/LambdaSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/LocalSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/RemoteSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p3.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/p3.Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/BrowserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/BrowserType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -33,4 +33,4 @@ RUN apt-get -y install google-chrome-stable
 
 RUN mvn compile
 
-CMD ["mvn", "install", "test", "-P", "lambda"]
+CMD ["mvn", "clean", "test", "-P", "Lambda"]

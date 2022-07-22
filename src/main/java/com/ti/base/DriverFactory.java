@@ -55,8 +55,8 @@ public class DriverFactory {
 			capabilities.setCapability("browserName", "Chrome");
 			capabilities.setCapability("version", "103.0");
 			capabilities.setCapability("platform", "Windows 10");
-			capabilities.setCapability("resolution","1024x768");
-			capabilities.setCapability("build", "First Test");
+			capabilities.setCapability("resolution","1920x1080");
+			capabilities.setCapability("build", "Jenkins Test");
 			capabilities.setCapability("name", "Online test");
 			capabilities.setCapability("selenium_version", "4.1.2");// To set selenium version
 			capabilities.setCapability("network", true); // To enable network logs
