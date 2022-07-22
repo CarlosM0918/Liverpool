@@ -6,6 +6,7 @@ import com.ti.pages.Login;
 import com.ti.pages.SearchPage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.net.MalformedURLException;
@@ -22,7 +23,7 @@ public class BaseTest {
 
     @BeforeTest
     @Parameters({"browser", "remoteDriver"})
-     void setup(String browser, boolean remoteDriver) throws MalformedURLException {
+     void setup(String browser, @Optional("false") boolean remoteDriver) throws MalformedURLException {
 			DriverFactory.getInstance().setDriver(BrowserType.valueOf(browser.toUpperCase()), remoteDriver);
 			DriverFactory.getInstance().getDriver().navigate().to(baseURL);
 
@@ -42,7 +43,7 @@ public class BaseTest {
 
     @AfterTest
 	@Parameters("remoteDriver")
-    void turnDown(boolean remoteDriver){
+    void turnDown(@Optional("false") boolean remoteDriver){
 		DriverFactory.getInstance().removeDriver();
     }
 }

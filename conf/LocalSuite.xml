@@ -3,22 +3,18 @@
 <suite name="Liverpool_Local_Suite" thread-count="1" parallel="tests">
     <test name="ChromeTest">
         <parameter name="browser" value="Chrome"/>
-		<parameter name="remoteDriver" value="false"></parameter>
-
 		<classes>
             <class name="com.ti.testcases.TestClass"/>
         </classes>
     </test>
 <!--    <test name="EdgeTest">-->
 <!--        <parameter name="browser" value="Edge"/>-->
-<!--		<parameter name="remoteDriver" value="false"></parameter>-->
 <!--        <classes>-->
 <!--            <class name="com.ti.testcases.TestClass"/>-->
 <!--        </classes>-->
 <!--    </test>-->
 <!--	<test name="FirefoxTest">-->
 <!--		<parameter name="browser" value="Firefox"/>-->
-<!--		<parameter name="remoteDriver" value="false"></parameter>-->
 <!--		<classes>-->
 <!--			<class name="com.ti.testcases.TestClass"/>-->
 <!--		</classes>-->

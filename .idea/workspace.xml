@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95f7308b-f4d3-411d-b060-e07bdd7851ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/LambdaSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/LocalSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/RemoteSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p3.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/p3.Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/BrowserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/BrowserType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/conf/LocalSuite.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ti/base/DriverFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/ti/pages/MainPage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/ti/testcases/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/ti/testcases/TestClass.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,23 +63,14 @@
       <recent name="C:\Users\Azul\Documents\FlujoLiverpool\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Azul\Desktop\material\SeAvanzado\Liverpool\conf" />
       <recent name="C:\Users\Azul\Desktop\material\FlujoLiverpool\FlujoLiverpool" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ti.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml">
-    <configuration name="C:/Users/Azul/Desktop/material/FlujoLiverpool/FlujoLiverpool/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FlujoLiverpool" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/conf/RemoteSuite.xml">
     <configuration name="C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Liverpool" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/LocalSuite.xml" />
@@ -90,6 +91,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/conf/LocalSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Liverpool" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/conf/LocalSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/conf/RemoteSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Liverpool" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/conf/RemoteSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Liverpool" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -100,23 +121,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Azul/Documents/FlujoLiverpool/src/test/java/com/ti/testcases/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FlujoLiverpool" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/ti/testcases/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/conf/RemoteSuite.xml" />
+        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/conf/LocalSuite.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/LocalSuite.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/RemoteSuite.xml" />
         <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/SeAvanzado/Liverpool/testng.xml" />
-        <item itemvalue="TestNG.C:/Users/Azul/Desktop/material/FlujoLiverpool/FlujoLiverpool/testng.xml" />
-        <item itemvalue="TestNG.C:/Users/Azul/Documents/FlujoLiverpool/src/test/java/com/ti/testcases/testng.xml" />
       </list>
     </recent_temporary>
   </component>

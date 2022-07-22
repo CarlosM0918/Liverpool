@@ -31,4 +31,6 @@ RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/so
 RUN apt-get -y update
 RUN apt-get -y install google-chrome-stable
 
-CMD ["mvn", "install", "test", "-DtestngFile=LocalSuite.xml"]
+RUN mvn compile
+
+CMD ["mvn", "install", "test", "-P", "lambda"]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Liverpool_Lambda_Suite" thread-count="3" parallel="tests">
+	<test name="ChromeTest">
+		<parameter name="browser" value="Lambda"/>
+		<classes>
+			<class name="com.ti.testcases.TestClass"/>
+		</classes>
+	</test>
+</suite>
