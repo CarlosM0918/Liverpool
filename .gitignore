@@ -6,3 +6,9 @@ jenkins_home_host/
 lib/
 allure-results
 Dockerdata/
+dockercompose.yml
+*.iml
+pipeline
+Dockerfile
+p2.Dockerfile
+prueba.Dockerfile
